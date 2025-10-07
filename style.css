@@ -1,0 +1,233 @@
+@media (max-width: 600px) {
+    .menu {
+      display: none; /* Esconde o menu */
+      flex-direction: column; /* Alinha os itens verticalmente */
+      background-color: #333;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      width: 150px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+}
+/* Botão do menu hamburguer */
+.hamburger {
+    display: none; /* Escondido por padrão */
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  menu{
+    align-items: center;
+    width: 1000px;
+}
+.menu{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu li {
+    margin: 0 10px;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;}
+a{
+    margin: 10px;
+    padding: 10px;
+  
+}
+nav{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   justify-items: center;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+body{
+    background-image:url(TheatroModificadoDefinitivo.jpg);
+    display:grid;
+
+}
+
+/* o id (#)serve apenas para 1 único item diferentemente das classes */
+#titulo-principal{
+ text-align: center;
+ font-weight: bold;
+ color:rgba(0, 0, 0, 0.822);
+ background-color: rgba(255, 228, 196, 0.459);
+ font-size: 3em;
+ font-style: oblique;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+ .títulos{
+    text-align: center;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.822);
+    background-color: rgba(255, 228, 196, 0.459);
+    font-size: 3em;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+.texto{
+    color: rgba(0, 0, 0, 0.822);
+    font-weight: bold;
+    font-size: 1.5em;
+    font-style: oblique;
+    margin: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    background-color: rgba(255, 228, 196, 0.459);
+    border-radius: 10%;
+}
+.img{
+    justify-content:start;
+    display: grid;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+h4{
+    text-align: center;
+ font-weight: bold;
+ color:rgba(0, 0, 0, 0.822);
+ background-color: rgba(255, 228, 196, 0.459);
+ font-size: 3em;
+ font-style: oblique;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex; /* Ativa o Flexbox */
+    flex-wrap: nowrap; /* Não permite quebra de linha */
+    flex-direction: row; /* Alinha os itens em linha horizontal */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: self-start; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Altura total da tela */
+    width: 100vw; /* Largura total da tela */
+    margin: 0; /* Remove margens padrão */
+  }
+
+  /* Estilo dos itens */
+  .projetos {
+    display: flex; /* Ativa o Flexbox no item (se necessário para conteúdo interno) */
+    justify-content: center; /* Centraliza o conteúdo interno horizontalmente */
+    align-items: self-start; /* Centraliza o conteúdo interno verticalmente */
+    background-color: azure; /* Cor de fundo */
+    padding: 2%; /* Espaçamento interno */
+    height: 150px; /* Altura fixa */
+    width: 150px; /* Largura fixa */
+    border-radius: 10%; /* Bordas arredondadas */
+    margin: 10px; /* Espaçamento entre os itens */
+  }
+
+  #btnVoltarTopo{
+    display: flex;
+    opacity: 90%;
+    border: none;
+    width: 10%;
+    height: 20%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+#footer{
+  color: aliceblue;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: white;
+  height: 3px;
+  margin: 4px 0;
+  width: 25px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+.button-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#mensagem-dinamica {
+  font-size: 1.2em;
+  color: #000000;
+  margin: 20px;
+  background-color: rgba(255, 235, 205, 0.534);
+  width: 15%;
+}
+@media (max-width: 768px) {
+  .menu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}

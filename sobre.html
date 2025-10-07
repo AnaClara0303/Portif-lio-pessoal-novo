@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Potifólio</title>
+</head>
+<header>
+    <menu class="menu">
+       <nav>
+        <a href="index.html"class="menu">Início<a>
+        <a href="sobre.html" class="menu">Sobre<a></a>
+       <a href="contato.html" class="menu">Contato<a></a>
+       </nav>
+    </menu>
+</header>
+<body>
+    <h1 id="titulo-principal"> Sobre Mim</h1>
+
+    <div>
+    <text class="texto"> Sou uma adolescente tímida, daquelas que falam pouco, mas pensam muito. 
+        Gosto de observar o mundo com calma, entender os detalhes, sentir o que está por trás das palavras. 
+        Às vezes fico em silêncio, mas minha mente está sempre cheia de ideias, perguntas e reflexões. 
+        A timidez nunca foi um obstáculo — ela me ensinou a escutar melhor, a enxergar com mais profundidade e a encontrar 
+        formas alternativas de me expressar.
+
+       <p> Desde pequena, sempre fui apaixonada por arte. Gosto de desenhar, escrever... mas foi no teatro que encontrei 
+        meu lugar. Há três anos, comecei a estudar e praticar teatro, e desde então, o palco virou um espaço onde posso ser quem
+         sou — ou quem quiser ser. Mesmo sendo tímida, o teatro me dá coragem. Ele me mostra que a emoção pode ser transmitida 
+         com um olhar, um gesto, uma pausa. Aprendi que não é preciso gritar para ser ouvida.</p>
+        
+        <p>Também sou formada em inglês, o que me abriu portas para conhecer novas culturas, ler autores incríveis e entender o 
+        mundo por outros pontos de vista. Aprender outro idioma foi mais do que uma conquista acadêmica — foi uma forma de 
+        expandir minha mente e minha criatividade. Gosto de estudar, de aprender, de explorar ideias. Tenho facilidade para 
+        entender conceitos complexos e gosto de pensar de forma crítica e criativa.</p>
+        
+        <p>Ainda estou começando minha jornada, e sei que tenho muito a aprender.</p> 
+       
+    </text>
+</div>
+</body>
+<footer>
+    <button class="container" id="btnVoltarTopo">Voltar ao Topo</button>
+        <p id="footer">&copy; 2025 Feito pela aluna: Ana Clara</p>
+   
+    <script>
+        // Seleciona o botão
+        const btnVoltarTopo = document.getElementById('btnVoltarTopo');
+   
+        // Mostra o botão quando o usuário rolar para baixo
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) { // Exibe o botão após 300px de rolagem
+                btnVoltarTopo.style.display = 'block';
+            } else {
+                btnVoltarTopo.style.display = 'none';
+            }
+        });
+   
+        // Adiciona o evento de clique ao botão
+        btnVoltarTopo.addEventListener('click', function() {
+            // Rola suavemente para o topo
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Animação suave
+            });
+        });
+    </script>
+   </footer>
+</html>
